@@ -26,7 +26,6 @@ railway.json
 render.yaml
 .koyeb.yaml
 app.json
-Aptfile
 build.sh
 setup_service.sh
 start.sh
