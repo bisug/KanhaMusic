@@ -1,6 +1,7 @@
 .git
 .github
 .gitignore
+.slugignore
 
 .env
 *.log
@@ -13,3 +14,19 @@ temp
 bin
 dist
 build
+
+README.md
+LICENSE
+sample.env
+
+Dockerfile
+docker-compose.yml
+heroku.yml
+railway.json
+render.yaml
+.koyeb.yaml
+app.json
+Aptfile
+build.sh
+setup_service.sh
+start.sh
