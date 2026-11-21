@@ -449,7 +449,7 @@ func getAudioPipeline(
 ) *ntgcalls.AudioDescription {
 	audio := &ntgcalls.AudioDescription{
 		MediaSource:  ntgcalls.MediaSourceShell,
-		SampleRate:   96000,
+		SampleRate:   48000,
 		ChannelCount: 2,
 	}
 
