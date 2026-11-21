@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+BUILD_DIR="${1:-$(pwd)}"
+cd "$BUILD_DIR"
+
+bash install.sh -n -t --quiet --skip-summary
+
+mkdir -p bin
+
+curl -fsSL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux -o bin/yt-dlp
+chmod +x bin/yt-dlp
+
+curl -fsSL https://deno.land/install.sh -o /tmp/deno-install.sh
+DENO_INSTALL="$BUILD_DIR" sh /tmp/deno-install.sh -y --no-modify-path
+rm -f /tmp/deno-install.sh
+chmod +x bin/deno
